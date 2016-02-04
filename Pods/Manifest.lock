@@ -1,0 +1,15 @@
+PODS:
+  - MFSideMenu (0.5.5)
+  - OrigamiEngine (1.0.14):
+    - OrigamiEngine/Core (= 1.0.14)
+  - OrigamiEngine/Core (1.0.14)
+
+DEPENDENCIES:
+  - MFSideMenu
+  - OrigamiEngine
+
+SPEC CHECKSUMS:
+  MFSideMenu: 268122e6894f2747fc3a2b48578100b232506c60
+  OrigamiEngine: 74b097326260597f1498790795cc2cdd604c199a
+
+COCOAPODS: 0.38.2

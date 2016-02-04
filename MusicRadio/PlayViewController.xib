@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayViewController">
+            <connections>
+                <outlet property="currentRadio" destination="ApA-OV-Sa4" id="FBw-II-DBQ"/>
+                <outlet property="loveList" destination="aXJ-DZ-5wm" id="Auq-bM-G7w"/>
+                <outlet property="moreRadioBtn" destination="C1h-A5-n9c" id="UmX-Wa-1pv"/>
+                <outlet property="next" destination="r2s-TN-Dyi" id="Pb5-Dc-vMQ"/>
+                <outlet property="play" destination="mGZ-Ml-cSO" id="K9O-Vn-1aa"/>
+                <outlet property="setting" destination="ZA9-TF-9EW" id="HWf-jD-g6E"/>
+                <outlet property="songImage" destination="Gfz-Ea-cy3" id="FHR-5F-7Gd"/>
+                <outlet property="songLove" destination="Xo2-85-Mqp" id="Lbx-WQ-Ukx"/>
+                <outlet property="songName" destination="rQS-0x-yVN" id="009-gc-HcM"/>
+                <outlet property="songProgress" destination="jIT-tw-ATf" id="dgg-An-8vm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1h-A5-n9c">
+                    <rect key="frame" x="0.0" y="47" width="94" height="30"/>
+                    <state key="normal" title="更多电台"/>
+                    <connections>
+                        <action selector="moreRadioClick:" destination="-1" eventType="touchUpInside" id="qKh-NX-pxr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正在收听：电台名字" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApA-OV-Sa4">
+                    <rect key="frame" x="157" y="51" width="163" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gfz-Ea-cy3">
+                    <rect key="frame" x="100" y="174" width="120" height="120"/>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jIT-tw-ATf">
+                    <rect key="frame" x="85" y="357" width="150" height="2"/>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGZ-Ml-cSO">
+                    <rect key="frame" x="135" y="420" width="46" height="30"/>
+                    <state key="normal" title="播放"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2s-TN-Dyi">
+                    <rect key="frame" x="215" y="420" width="46" height="30"/>
+                    <state key="normal" title="下一曲"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo2-85-Mqp">
+                    <rect key="frame" x="48" y="420" width="46" height="30"/>
+                    <state key="normal" title="喜爱"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXJ-DZ-5wm">
+                    <rect key="frame" x="0.0" y="522" width="46" height="30"/>
+                    <state key="normal" title="列表"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZA9-TF-9EW">
+                    <rect key="frame" x="274" y="522" width="46" height="30"/>
+                    <state key="normal" title="设置"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="歌曲名字" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQS-0x-yVN">
+                    <rect key="frame" x="115" y="115" width="86" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="487" y="-120"/>
+        </view>
+    </objects>
+</document>

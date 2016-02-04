@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0894DCC8A9194CEDBDD1C08FA02EFC4C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4031767981ED741CEA5610D4F76CF09F /* QuartzCore.framework */; };
+		092059D8092705943CDF30B029DC95FB /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C71557116E9D32B0074C486D16F241D /* MFSideMenuShadow.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		156CEBDB3CF6840DF93EF45B17874478 /* M3uContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7B4F2DC6904411210E6A939D8583E1 /* M3uContainer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		17779D1A3AAE9B83D545097C282FF442 /* ORGMEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 13332700518F9D99608F997AE7FE67FC /* ORGMEngine.h */; };
+		1778A09CD3685391CBBA46AB87C951B0 /* CueSheetContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BA6B4857A18F0434F954578681C7A32 /* CueSheetContainer.h */; };
+		269A47C58FE3E5E457008382875CAD55 /* ORGMPluginManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4523BD2C11424CEDFA4E8E11167E28A9 /* ORGMPluginManager.h */; };
+		29406F382D9A8844920B80973D686F6C /* CueSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A57E48E8BB98954D0389E4F9DD1FF3 /* CueSheet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2AD29947C98A53D47C3043CBA5B40EAA /* HTTPSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBBBA90724BF9EDC48A3EC62D4A28A7 /* HTTPSource.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2B22F6962FC7126A028DDEA2A020E098 /* ORGMConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F5897694E298E2A172C5F1BFEADC0747 /* ORGMConverter.h */; };
+		2D9510FF7F287108CBBD898F2660DDD9 /* CueSheetTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = FB3E87E0104E7E95C42ED1E6E6621695 /* CueSheetTrack.h */; };
+		31E08CFA0033CFBE38A3403F42E6EE45 /* MFSideMenuShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = 23441456DDED0F01745DCFFA79BCA3EC /* MFSideMenuShadow.h */; };
+		4643E524AF470F252AF9D64CB2ED1056 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFBB7C9268CFE089EA51417E3D67291 /* UIViewController+MFSideMenuAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		53878CD61EC3C58D9A8DB3100B786453 /* HTTPSource.h in Headers */ = {isa = PBXBuildFile; fileRef = AA42F3826979091BD84746DFA56A96E1 /* HTTPSource.h */; };
+		587FB94A512A8252E98575DFEE942A1D /* CoreAudioDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D98A365494951C8BE5F6BC51151A1F /* CoreAudioDecoder.h */; };
+		6EE2069738D07ECAF4CDC4C45151E57C /* ORGMOutputUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BBE4E7553070ED59629DB136BFDC026 /* ORGMOutputUnit.h */; };
+		7394DC96DE258FD5222D5BF480A7B131 /* CueSheetDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 644A2A64C70AC468A7D6FA872A111239 /* CueSheetDecoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7682C905BBBAECB64991CA4E8D14DAAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3AAD4C94D0922EFAD8D5F7FD786443 /* Foundation.framework */; };
+		85348A3B39F1803D2D1663EE2B43A445 /* ORGMQueues.h in Headers */ = {isa = PBXBuildFile; fileRef = E51BEFD656C2AFD4EE1D57EDAA1A445C /* ORGMQueues.h */; };
+		863DB54ED9CDB1527BD7D0F8FD6D54C6 /* ORGMConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 64065D5073431DBBC1C161D841A83934 /* ORGMConverter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8705ADFCED0928AB8820F266D457AF57 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B053F8D0A5AFCD60E24F1F624674F08D /* Pods-dummy.m */; };
+		8A33290322042D79DA286DD79A14A2DA /* MFSideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E12881D4856D3AD7E944FFCF46B3F4 /* MFSideMenu-dummy.m */; };
+		9175F289583D5460C973C68C527F13BE /* ORGMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB956347E99CEAAE8B9EE2AACDB7D02 /* ORGMEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93489B94FF4C0B2E8C7C3F4FCF6CB5C0 /* MFSideMenuContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B727301EDA40AE74A85BBB8BC4FB433 /* MFSideMenuContainerViewController.h */; };
+		94888CF0C5C5BF2821432B06DFB25D74 /* OrigamiEngine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C254407C6A1621218F114DA72F2AA441 /* OrigamiEngine-dummy.m */; };
+		A379696D4C12362732581389A9E41371 /* MFSideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A50AF4FC635FEC3E6FB2AC17DE7770 /* MFSideMenu.h */; };
+		A459F581171218DDEFD9BA643FE1CDCC /* FileSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F8D84FA2FBBEC6ED6749AB9FB09A8634 /* FileSource.h */; };
+		A8A051C0F80632B4E4305CBB411BC932 /* CoreAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5F64BF84524A635605E302E125BC8 /* CoreAudioDecoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AE51DFF548EB3A91214A6EA3635B77E5 /* CueSheetContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D68EF64F6A5E4981C038D50E4F728 /* CueSheetContainer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF2C3631CB7FF977E1AE84C1A1170354 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528AA02CF32C1BEE785328165A209186 /* AVFoundation.framework */; };
+		AFAE712107A3AB94DB6D23A63826412F /* ORGMAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = A810F02E6F1544206C6255F3EF98072F /* ORGMAudioUnit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B493D4D154DA6499DD6C7D89D29004D7 /* ORGMAudioUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 937E3AB95E0375D508AFBDDA25CE0EE0 /* ORGMAudioUnit.h */; };
+		B98F3397A65F96BF02848E6C525C559B /* CueSheetTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 355EFA5705AE23BF255FFF337F12765C /* CueSheetTrack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BC8D56CFB872EEDB97C246AF5F23B6DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3AAD4C94D0922EFAD8D5F7FD786443 /* Foundation.framework */; };
+		BF7E3802F9DB0620F58A6591DC0D9F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3AAD4C94D0922EFAD8D5F7FD786443 /* Foundation.framework */; };
+		C0A9ACB9B07760F4765613EDEB763A12 /* ORGMInputUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3061F5BB1686848CB501CEA30E319FAC /* ORGMInputUnit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA6649E14265F5F43324F0F52E5E433B /* CueSheetDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C35F07C58C286FE8FAA0536E0309DA52 /* CueSheetDecoder.h */; };
+		D4089E61F5962ED9FA5DEC42B7131EC6 /* M3uContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2430D6A99D9BDAB9918199197140B8CF /* M3uContainer.h */; };
+		D98D71153CA36F2E5F1624668B164B32 /* ORGMOutputUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE633A7E38D7851352E0F81DCB38D53 /* ORGMOutputUnit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DCB82AD21CC7D00D239D8D04406CBF86 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71761840392128AAFD665E73CDC1B8 /* AudioToolbox.framework */; };
+		E008DC26684298E177FB2B45F51B07DF /* UIViewController+MFSideMenuAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E912A8DF651859A4B782CEED441A75CE /* UIViewController+MFSideMenuAdditions.h */; };
+		E0592682ED4C0161B5C79DDE5350CE6C /* ORGMCommonProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A6A3D162870D609ED849D73FA901A8 /* ORGMCommonProtocols.h */; };
+		ECFC821CEEC34F1DD2B57D5B436F74BF /* ORGMQueues.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E3F3634F3B570C2857265415A4F217 /* ORGMQueues.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EE36B552860AEC433A9E3588067ED22E /* ORGMInputUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = FE0FA673119B648895EBB9195DF9AB6E /* ORGMInputUnit.h */; };
+		EF118881C49C45FB0D170D1907DC052C /* FileSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 89517F69FEF63D2A1DC005F6748A2FE3 /* FileSource.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F0FCB974BD088ADA45AC98024820A41A /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7042F8A3E4399D6875E7A6C00BEE20 /* MFSideMenuContainerViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F3FA635CD62012496908F42DD7E3D119 /* ORGMPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AE20FE2F1A13E0BB0E1C42902A4457 /* ORGMPluginManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5B8AF7F54B96689302FB0E7325D152B /* CueSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 9768E9E8C271EA0D7A4A5C7CF4505767 /* CueSheet.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B903D2843831A7FA7D74976A77D79129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E778B254E8F4BA5A83DB70C0657C138;
+			remoteInfo = OrigamiEngine;
+		};
+		E57E37070A687E781B1F25FC1E569CF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0A20885DCBA7E877D6DF2E4E08C351F;
+			remoteInfo = MFSideMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		052920E0912A47541240C0E37C2CE1F6 /* MFSideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MFSideMenu.xcconfig; sourceTree = "<group>"; };
+		13332700518F9D99608F997AE7FE67FC /* ORGMEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORGMEngine.h; path = OrigamiEngine/ORGMEngine.h; sourceTree = "<group>"; };
+		13E3F3634F3B570C2857265415A4F217 /* ORGMQueues.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORGMQueues.m; path = OrigamiEngine/ORGMQueues.m; sourceTree = "<group>"; };
+		1539A331CD9986260D2D57FC4D360D24 /* libMFSideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMFSideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		15AE20FE2F1A13E0BB0E1C42902A4457 /* ORGMPluginManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORGMPluginManager.m; path = OrigamiEngine/ORGMPluginManager.m; sourceTree = "<group>"; };
+		23441456DDED0F01745DCFFA79BCA3EC /* MFSideMenuShadow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MFSideMenuShadow.h; path = MFSideMenu/MFSideMenuShadow.h; sourceTree = "<group>"; };
+		23D98A365494951C8BE5F6BC51151A1F /* CoreAudioDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreAudioDecoder.h; path = OrigamiEngine/Plugins/CoreAudioDecoder.h; sourceTree = "<group>"; };
+		2430D6A99D9BDAB9918199197140B8CF /* M3uContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M3uContainer.h; path = OrigamiEngine/Plugins/M3uContainer.h; sourceTree = "<group>"; };
+		27A57E48E8BB98954D0389E4F9DD1FF3 /* CueSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CueSheet.m; path = OrigamiEngine/Plugins/CueSheet.m; sourceTree = "<group>"; };
+		2D3AAD4C94D0922EFAD8D5F7FD786443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3061F5BB1686848CB501CEA30E319FAC /* ORGMInputUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORGMInputUnit.m; path = OrigamiEngine/ORGMInputUnit.m; sourceTree = "<group>"; };
+		34331CBC549119CFADF84F9B418AED08 /* OrigamiEngine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OrigamiEngine-prefix.pch"; sourceTree = "<group>"; };
+		355EFA5705AE23BF255FFF337F12765C /* CueSheetTrack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CueSheetTrack.m; path = OrigamiEngine/Plugins/CueSheetTrack.m; sourceTree = "<group>"; };
+		3A1D68EF64F6A5E4981C038D50E4F728 /* CueSheetContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CueSheetContainer.m; path = OrigamiEngine/Plugins/CueSheetContainer.m; sourceTree = "<group>"; };
+		4031767981ED741CEA5610D4F76CF09F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4523BD2C11424CEDFA4E8E11167E28A9 /* ORGMPluginManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORGMPluginManager.h; path = OrigamiEngine/ORGMPluginManager.h; sourceTree = "<group>"; };
+		4EE633A7E38D7851352E0F81DCB38D53 /* ORGMOutputUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORGMOutputUnit.m; path = OrigamiEngine/ORGMOutputUnit.m; sourceTree = "<group>"; };
+		528AA02CF32C1BEE785328165A209186 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		54E12881D4856D3AD7E944FFCF46B3F4 /* MFSideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MFSideMenu-dummy.m"; sourceTree = "<group>"; };
+		64065D5073431DBBC1C161D841A83934 /* ORGMConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORGMConverter.m; path = OrigamiEngine/ORGMConverter.m; sourceTree = "<group>"; };
+		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		644A2A64C70AC468A7D6FA872A111239 /* CueSheetDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CueSheetDecoder.m; path = OrigamiEngine/Plugins/CueSheetDecoder.m; sourceTree = "<group>"; };
+		6BA6B4857A18F0434F954578681C7A32 /* CueSheetContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CueSheetContainer.h; path = OrigamiEngine/Plugins/CueSheetContainer.h; sourceTree = "<group>"; };
+		76B5F64BF84524A635605E302E125BC8 /* CoreAudioDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoreAudioDecoder.m; path = OrigamiEngine/Plugins/CoreAudioDecoder.m; sourceTree = "<group>"; };
+		884B1EB70977372C3A0732E6585DCB49 /* OrigamiEngine-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OrigamiEngine-Private.xcconfig"; sourceTree = "<group>"; };
+		89517F69FEF63D2A1DC005F6748A2FE3 /* FileSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FileSource.m; path = OrigamiEngine/Plugins/FileSource.m; sourceTree = "<group>"; };
+		898FDCF5C817BE8F3F4A979F349A5532 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		8BB956347E99CEAAE8B9EE2AACDB7D02 /* ORGMEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORGMEngine.m; path = OrigamiEngine/ORGMEngine.m; sourceTree = "<group>"; };
+		8C71557116E9D32B0074C486D16F241D /* MFSideMenuShadow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MFSideMenuShadow.m; path = MFSideMenu/MFSideMenuShadow.m; sourceTree = "<group>"; };
+		8E7042F8A3E4399D6875E7A6C00BEE20 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MFSideMenuContainerViewController.m; path = MFSideMenu/MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
+		937E3AB95E0375D508AFBDDA25CE0EE0 /* ORGMAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORGMAudioUnit.h; path = OrigamiEngine/ORGMAudioUnit.h; sourceTree = "<group>"; };
+		9768E9E8C271EA0D7A4A5C7CF4505767 /* CueSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CueSheet.h; path = OrigamiEngine/Plugins/CueSheet.h; sourceTree = "<group>"; };
+		9B727301EDA40AE74A85BBB8BC4FB433 /* MFSideMenuContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MFSideMenuContainerViewController.h; path = MFSideMenu/MFSideMenuContainerViewController.h; sourceTree = "<group>"; };
+		9BBE4E7553070ED59629DB136BFDC026 /* ORGMOutputUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORGMOutputUnit.h; path = OrigamiEngine/ORGMOutputUnit.h; sourceTree = "<group>"; };
+		A49C99B03068EF70C60C4262E5297DDF /* OrigamiEngine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OrigamiEngine.xcconfig; sourceTree = "<group>"; };
+		A810F02E6F1544206C6255F3EF98072F /* ORGMAudioUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORGMAudioUnit.m; path = OrigamiEngine/ORGMAudioUnit.m; sourceTree = "<group>"; };
+		AA42F3826979091BD84746DFA56A96E1 /* HTTPSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPSource.h; path = OrigamiEngine/Plugins/HTTPSource.h; sourceTree = "<group>"; };
+		B053F8D0A5AFCD60E24F1F624674F08D /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDA654FDD4A6008C9C9D89AA583A2DE4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFBB7C9268CFE089EA51417E3D67291 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MFSideMenuAdditions.m"; path = "MFSideMenu/UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
+		BEBBBA90724BF9EDC48A3EC62D4A28A7 /* HTTPSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPSource.m; path = OrigamiEngine/Plugins/HTTPSource.m; sourceTree = "<group>"; };
+		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF7B4F2DC6904411210E6A939D8583E1 /* M3uContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M3uContainer.m; path = OrigamiEngine/Plugins/M3uContainer.m; sourceTree = "<group>"; };
+		C254407C6A1621218F114DA72F2AA441 /* OrigamiEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OrigamiEngine-dummy.m"; sourceTree = "<group>"; };
+		C35F07C58C286FE8FAA0536E0309DA52 /* CueSheetDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CueSheetDecoder.h; path = OrigamiEngine/Plugins/CueSheetDecoder.h; sourceTree = "<group>"; };
+		C41B6B9C805099457CCC28586134E366 /* MFSideMenu-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MFSideMenu-Private.xcconfig"; sourceTree = "<group>"; };
+		C6A50AF4FC635FEC3E6FB2AC17DE7770 /* MFSideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MFSideMenu.h; path = MFSideMenu/MFSideMenu.h; sourceTree = "<group>"; };
+		DEE92ECB6E2F2124721152B0A3DB462E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		E51BEFD656C2AFD4EE1D57EDAA1A445C /* ORGMQueues.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORGMQueues.h; path = OrigamiEngine/ORGMQueues.h; sourceTree = "<group>"; };
+		E7A6A3D162870D609ED849D73FA901A8 /* ORGMCommonProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORGMCommonProtocols.h; path = OrigamiEngine/ORGMCommonProtocols.h; sourceTree = "<group>"; };
+		E912A8DF651859A4B782CEED441A75CE /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MFSideMenuAdditions.h"; path = "MFSideMenu/UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
+		EAB780E68C1E723A08C17C3A4301CC0E /* libOrigamiEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOrigamiEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB71761840392128AAFD665E73CDC1B8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		F5897694E298E2A172C5F1BFEADC0747 /* ORGMConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORGMConverter.h; path = OrigamiEngine/ORGMConverter.h; sourceTree = "<group>"; };
+		F5F04C5220EDBC14D7585AA143E18FBD /* MFSideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MFSideMenu-prefix.pch"; sourceTree = "<group>"; };
+		F8D84FA2FBBEC6ED6749AB9FB09A8634 /* FileSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileSource.h; path = OrigamiEngine/Plugins/FileSource.h; sourceTree = "<group>"; };
+		FB3E87E0104E7E95C42ED1E6E6621695 /* CueSheetTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CueSheetTrack.h; path = OrigamiEngine/Plugins/CueSheetTrack.h; sourceTree = "<group>"; };
+		FE0FA673119B648895EBB9195DF9AB6E /* ORGMInputUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORGMInputUnit.h; path = OrigamiEngine/ORGMInputUnit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D2B391FCE45AA8C7823ED1DF5FC774A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2C3631CB7FF977E1AE84C1A1170354 /* AVFoundation.framework in Frameworks */,
+				DCB82AD21CC7D00D239D8D04406CBF86 /* AudioToolbox.framework in Frameworks */,
+				BC8D56CFB872EEDB97C246AF5F23B6DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB64E083EDEF4C023A00ADB9D223D933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7682C905BBBAECB64991CA4E8D14DAAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0B4898182D445D44ABC964EB7AF9422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7E3802F9DB0620F58A6591DC0D9F50 /* Foundation.framework in Frameworks */,
+				0894DCC8A9194CEDBDD1C08FA02EFC4C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F4349383E73D22E91FB246CBF21A5E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18F4349383E73D22E91FB246CBF21A5E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				528AA02CF32C1BEE785328165A209186 /* AVFoundation.framework */,
+				EB71761840392128AAFD665E73CDC1B8 /* AudioToolbox.framework */,
+				2D3AAD4C94D0922EFAD8D5F7FD786443 /* Foundation.framework */,
+				4031767981ED741CEA5610D4F76CF09F /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2CEFCB17C18150495DA7B5EB7AE0A3C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D7F5BF177AC670A3D5E0AB924D9B6BC /* MFSideMenu */,
+				A2462D8EF235AECB3D5A308F2B8DAB83 /* OrigamiEngine */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D7F5BF177AC670A3D5E0AB924D9B6BC /* MFSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C6A50AF4FC635FEC3E6FB2AC17DE7770 /* MFSideMenu.h */,
+				9B727301EDA40AE74A85BBB8BC4FB433 /* MFSideMenuContainerViewController.h */,
+				8E7042F8A3E4399D6875E7A6C00BEE20 /* MFSideMenuContainerViewController.m */,
+				23441456DDED0F01745DCFFA79BCA3EC /* MFSideMenuShadow.h */,
+				8C71557116E9D32B0074C486D16F241D /* MFSideMenuShadow.m */,
+				E912A8DF651859A4B782CEED441A75CE /* UIViewController+MFSideMenuAdditions.h */,
+				BDFBB7C9268CFE089EA51417E3D67291 /* UIViewController+MFSideMenuAdditions.m */,
+				959A7EB01613BCE516DE790C54D60BAB /* Support Files */,
+			);
+			path = MFSideMenu;
+			sourceTree = "<group>";
+		};
+		6E43C04DC2CEFCC77FCBF86992F8C3EA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				23D98A365494951C8BE5F6BC51151A1F /* CoreAudioDecoder.h */,
+				76B5F64BF84524A635605E302E125BC8 /* CoreAudioDecoder.m */,
+				9768E9E8C271EA0D7A4A5C7CF4505767 /* CueSheet.h */,
+				27A57E48E8BB98954D0389E4F9DD1FF3 /* CueSheet.m */,
+				6BA6B4857A18F0434F954578681C7A32 /* CueSheetContainer.h */,
+				3A1D68EF64F6A5E4981C038D50E4F728 /* CueSheetContainer.m */,
+				C35F07C58C286FE8FAA0536E0309DA52 /* CueSheetDecoder.h */,
+				644A2A64C70AC468A7D6FA872A111239 /* CueSheetDecoder.m */,
+				FB3E87E0104E7E95C42ED1E6E6621695 /* CueSheetTrack.h */,
+				355EFA5705AE23BF255FFF337F12765C /* CueSheetTrack.m */,
+				F8D84FA2FBBEC6ED6749AB9FB09A8634 /* FileSource.h */,
+				89517F69FEF63D2A1DC005F6748A2FE3 /* FileSource.m */,
+				AA42F3826979091BD84746DFA56A96E1 /* HTTPSource.h */,
+				BEBBBA90724BF9EDC48A3EC62D4A28A7 /* HTTPSource.m */,
+				2430D6A99D9BDAB9918199197140B8CF /* M3uContainer.h */,
+				BF7B4F2DC6904411210E6A939D8583E1 /* M3uContainer.m */,
+				937E3AB95E0375D508AFBDDA25CE0EE0 /* ORGMAudioUnit.h */,
+				A810F02E6F1544206C6255F3EF98072F /* ORGMAudioUnit.m */,
+				E7A6A3D162870D609ED849D73FA901A8 /* ORGMCommonProtocols.h */,
+				F5897694E298E2A172C5F1BFEADC0747 /* ORGMConverter.h */,
+				64065D5073431DBBC1C161D841A83934 /* ORGMConverter.m */,
+				13332700518F9D99608F997AE7FE67FC /* ORGMEngine.h */,
+				8BB956347E99CEAAE8B9EE2AACDB7D02 /* ORGMEngine.m */,
+				FE0FA673119B648895EBB9195DF9AB6E /* ORGMInputUnit.h */,
+				3061F5BB1686848CB501CEA30E319FAC /* ORGMInputUnit.m */,
+				9BBE4E7553070ED59629DB136BFDC026 /* ORGMOutputUnit.h */,
+				4EE633A7E38D7851352E0F81DCB38D53 /* ORGMOutputUnit.m */,
+				4523BD2C11424CEDFA4E8E11167E28A9 /* ORGMPluginManager.h */,
+				15AE20FE2F1A13E0BB0E1C42902A4457 /* ORGMPluginManager.m */,
+				E51BEFD656C2AFD4EE1D57EDAA1A445C /* ORGMQueues.h */,
+				13E3F3634F3B570C2857265415A4F217 /* ORGMQueues.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				2CEFCB17C18150495DA7B5EB7AE0A3C1 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
+				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
+				B053F8D0A5AFCD60E24F1F624674F08D /* Pods-dummy.m */,
+				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
+				898FDCF5C817BE8F3F4A979F349A5532 /* Pods.debug.xcconfig */,
+				DEE92ECB6E2F2124721152B0A3DB462E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		959A7EB01613BCE516DE790C54D60BAB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				052920E0912A47541240C0E37C2CE1F6 /* MFSideMenu.xcconfig */,
+				C41B6B9C805099457CCC28586134E366 /* MFSideMenu-Private.xcconfig */,
+				54E12881D4856D3AD7E944FFCF46B3F4 /* MFSideMenu-dummy.m */,
+				F5F04C5220EDBC14D7585AA143E18FBD /* MFSideMenu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MFSideMenu";
+			sourceTree = "<group>";
+		};
+		A2462D8EF235AECB3D5A308F2B8DAB83 /* OrigamiEngine */ = {
+			isa = PBXGroup;
+			children = (
+				6E43C04DC2CEFCC77FCBF86992F8C3EA /* Core */,
+				C1E9667996AFD368C0C1ECF0BC674A50 /* Support Files */,
+			);
+			path = OrigamiEngine;
+			sourceTree = "<group>";
+		};
+		C1E9667996AFD368C0C1ECF0BC674A50 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A49C99B03068EF70C60C4262E5297DDF /* OrigamiEngine.xcconfig */,
+				884B1EB70977372C3A0732E6585DCB49 /* OrigamiEngine-Private.xcconfig */,
+				C254407C6A1621218F114DA72F2AA441 /* OrigamiEngine-dummy.m */,
+				34331CBC549119CFADF84F9B418AED08 /* OrigamiEngine-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OrigamiEngine";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1539A331CD9986260D2D57FC4D360D24 /* libMFSideMenu.a */,
+				EAB780E68C1E723A08C17C3A4301CC0E /* libOrigamiEngine.a */,
+				BDA654FDD4A6008C9C9D89AA583A2DE4 /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6F5F4C2AAE3AE4AD05FC9660FADC7EC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587FB94A512A8252E98575DFEE942A1D /* CoreAudioDecoder.h in Headers */,
+				F5B8AF7F54B96689302FB0E7325D152B /* CueSheet.h in Headers */,
+				1778A09CD3685391CBBA46AB87C951B0 /* CueSheetContainer.h in Headers */,
+				CA6649E14265F5F43324F0F52E5E433B /* CueSheetDecoder.h in Headers */,
+				2D9510FF7F287108CBBD898F2660DDD9 /* CueSheetTrack.h in Headers */,
+				A459F581171218DDEFD9BA643FE1CDCC /* FileSource.h in Headers */,
+				53878CD61EC3C58D9A8DB3100B786453 /* HTTPSource.h in Headers */,
+				D4089E61F5962ED9FA5DEC42B7131EC6 /* M3uContainer.h in Headers */,
+				B493D4D154DA6499DD6C7D89D29004D7 /* ORGMAudioUnit.h in Headers */,
+				E0592682ED4C0161B5C79DDE5350CE6C /* ORGMCommonProtocols.h in Headers */,
+				2B22F6962FC7126A028DDEA2A020E098 /* ORGMConverter.h in Headers */,
+				17779D1A3AAE9B83D545097C282FF442 /* ORGMEngine.h in Headers */,
+				EE36B552860AEC433A9E3588067ED22E /* ORGMInputUnit.h in Headers */,
+				6EE2069738D07ECAF4CDC4C45151E57C /* ORGMOutputUnit.h in Headers */,
+				269A47C58FE3E5E457008382875CAD55 /* ORGMPluginManager.h in Headers */,
+				85348A3B39F1803D2D1663EE2B43A445 /* ORGMQueues.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F9BBF1D880A3B970E54440BE92A43B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A379696D4C12362732581389A9E41371 /* MFSideMenu.h in Headers */,
+				93489B94FF4C0B2E8C7C3F4FCF6CB5C0 /* MFSideMenuContainerViewController.h in Headers */,
+				31E08CFA0033CFBE38A3403F42E6EE45 /* MFSideMenuShadow.h in Headers */,
+				E008DC26684298E177FB2B45F51B07DF /* UIViewController+MFSideMenuAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		39B5A1E4AF7D8B38BCA63B85C52918C6 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47DB00D6D87F9F023FCCF2890A73717B /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				A6CB8F5C9537116BD9DC64BBFBEC4E9B /* Sources */,
+				AB64E083EDEF4C023A00ADB9D223D933 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3100CCC44C970CED90DB9B63BF2D55B5 /* PBXTargetDependency */,
+				F779813EBE22753AE05874C86DA18738 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = BDA654FDD4A6008C9C9D89AA583A2DE4 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7E778B254E8F4BA5A83DB70C0657C138 /* OrigamiEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE00EED5C7566E74F91528EFE0B15364 /* Build configuration list for PBXNativeTarget "OrigamiEngine" */;
+			buildPhases = (
+				E26043FDA5E56413F4D919F196B71727 /* Sources */,
+				3D2B391FCE45AA8C7823ED1DF5FC774A /* Frameworks */,
+				6F5F4C2AAE3AE4AD05FC9660FADC7EC8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrigamiEngine;
+			productName = OrigamiEngine;
+			productReference = EAB780E68C1E723A08C17C3A4301CC0E /* libOrigamiEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E0A20885DCBA7E877D6DF2E4E08C351F /* MFSideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7276DA17AE26B6A54C7C05B519453B36 /* Build configuration list for PBXNativeTarget "MFSideMenu" */;
+			buildPhases = (
+				063D6D3B8D991EAA0150BA7B12538596 /* Sources */,
+				E0B4898182D445D44ABC964EB7AF9422 /* Frameworks */,
+				C5F9BBF1D880A3B970E54440BE92A43B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MFSideMenu;
+			productName = MFSideMenu;
+			productReference = 1539A331CD9986260D2D57FC4D360D24 /* libMFSideMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0A20885DCBA7E877D6DF2E4E08C351F /* MFSideMenu */,
+				7E778B254E8F4BA5A83DB70C0657C138 /* OrigamiEngine */,
+				39B5A1E4AF7D8B38BCA63B85C52918C6 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		063D6D3B8D991EAA0150BA7B12538596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A33290322042D79DA286DD79A14A2DA /* MFSideMenu-dummy.m in Sources */,
+				F0FCB974BD088ADA45AC98024820A41A /* MFSideMenuContainerViewController.m in Sources */,
+				092059D8092705943CDF30B029DC95FB /* MFSideMenuShadow.m in Sources */,
+				4643E524AF470F252AF9D64CB2ED1056 /* UIViewController+MFSideMenuAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6CB8F5C9537116BD9DC64BBFBEC4E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8705ADFCED0928AB8820F266D457AF57 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26043FDA5E56413F4D919F196B71727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A051C0F80632B4E4305CBB411BC932 /* CoreAudioDecoder.m in Sources */,
+				29406F382D9A8844920B80973D686F6C /* CueSheet.m in Sources */,
+				AE51DFF548EB3A91214A6EA3635B77E5 /* CueSheetContainer.m in Sources */,
+				7394DC96DE258FD5222D5BF480A7B131 /* CueSheetDecoder.m in Sources */,
+				B98F3397A65F96BF02848E6C525C559B /* CueSheetTrack.m in Sources */,
+				EF118881C49C45FB0D170D1907DC052C /* FileSource.m in Sources */,
+				2AD29947C98A53D47C3043CBA5B40EAA /* HTTPSource.m in Sources */,
+				156CEBDB3CF6840DF93EF45B17874478 /* M3uContainer.m in Sources */,
+				AFAE712107A3AB94DB6D23A63826412F /* ORGMAudioUnit.m in Sources */,
+				863DB54ED9CDB1527BD7D0F8FD6D54C6 /* ORGMConverter.m in Sources */,
+				9175F289583D5460C973C68C527F13BE /* ORGMEngine.m in Sources */,
+				C0A9ACB9B07760F4765613EDEB763A12 /* ORGMInputUnit.m in Sources */,
+				D98D71153CA36F2E5F1624668B164B32 /* ORGMOutputUnit.m in Sources */,
+				F3FA635CD62012496908F42DD7E3D119 /* ORGMPluginManager.m in Sources */,
+				ECFC821CEEC34F1DD2B57D5B436F74BF /* ORGMQueues.m in Sources */,
+				94888CF0C5C5BF2821432B06DFB25D74 /* OrigamiEngine-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3100CCC44C970CED90DB9B63BF2D55B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MFSideMenu;
+			target = E0A20885DCBA7E877D6DF2E4E08C351F /* MFSideMenu */;
+			targetProxy = E57E37070A687E781B1F25FC1E569CF7 /* PBXContainerItemProxy */;
+		};
+		F779813EBE22753AE05874C86DA18738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OrigamiEngine;
+			target = 7E778B254E8F4BA5A83DB70C0657C138 /* OrigamiEngine */;
+			targetProxy = B903D2843831A7FA7D74976A77D79129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09E0D97B71FBC17F55A72DC9550A198B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884B1EB70977372C3A0732E6585DCB49 /* OrigamiEngine-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OrigamiEngine/OrigamiEngine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1D54A024893D27C50653AB7F742EB66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41B6B9C805099457CCC28586134E366 /* MFSideMenu-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MFSideMenu/MFSideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		47EC673B3932F2E6486D8259C8C0FAC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884B1EB70977372C3A0732E6585DCB49 /* OrigamiEngine-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OrigamiEngine/OrigamiEngine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		86F859C938883DFE826F32E0B306CBA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE92ECB6E2F2124721152B0A3DB462E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		925CB30017848B194E6FB995B23A6E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41B6B9C805099457CCC28586134E366 /* MFSideMenu-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MFSideMenu/MFSideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E47791F2E3E0A8E25A1360FA421FF946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898FDCF5C817BE8F3F4A979F349A5532 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47DB00D6D87F9F023FCCF2890A73717B /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47791F2E3E0A8E25A1360FA421FF946 /* Debug */,
+				86F859C938883DFE826F32E0B306CBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7276DA17AE26B6A54C7C05B519453B36 /* Build configuration list for PBXNativeTarget "MFSideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D54A024893D27C50653AB7F742EB66E /* Debug */,
+				925CB30017848B194E6FB995B23A6E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE00EED5C7566E74F91528EFE0B15364 /* Build configuration list for PBXNativeTarget "OrigamiEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E0D97B71FBC17F55A72DC9550A198B /* Debug */,
+				47EC673B3932F2E6486D8259C8C0FAC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
