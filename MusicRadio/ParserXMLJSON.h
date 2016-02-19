@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GZIP.h"
 
 @interface ParserXMLJSON : NSObject
 -(void)parserXMLFor:(NSData *)data with:(void(^)(NSDictionary *dic))block;
--(NSDictionary *)parseJSONFor:(NSData *)data;
++(NSDictionary *)parseJSONFor:(NSData *)data;
 @end

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "+[URLManage getLrcForSongName:withTimeLength:withHash:]:URLManage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "time.length">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettingTableViewController pickerView:numberOfRowsInComponent:]:SettingTableViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__77-[RadioListCollectionViewController collectionView:didSelectItemAtIndexPath:]_block_invoke:RadioListCollectionViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LoveManage addLove:]:LoveManage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.loveList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SongManage initSongManage:]:SongManage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "lrcDataParse">
+            </PersistentString>
+            <PersistentString
+               value = "lrcData">
+            </PersistentString>
+            <PersistentString
+               value = "self.songLrc">
+            </PersistentString>
+            <PersistentString
+               value = "respose">
+            </PersistentString>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PlayViewController KRC:withLRCArray:]:PlayViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LoveManage saveLoveList]:LoveManage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.loveList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettingManage save]:SettingManage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.path">
+            </PersistentString>
+            <PersistentString
+               value = "self.settingDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ActiveityView initWithParentView:]:ActiveityView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.animateView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PlayManage playForIndex]:PlayManage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.playIndex">
+            </PersistentString>
+            <PersistentString
+               value = "self.orgmengine">
+            </PersistentString>
+            <PersistentString
+               value = "playIndex">
+            </PersistentString>
+            <PersistentString
+               value = "( self.playIndex + 1 ) % self.music.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RadioListCollectionViewController collectionView:didSelectItemAtIndexPath:]:RadioListCollectionViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "postString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PlayViewController loveListClick:]:PlayViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__26-[LRCView setCurrentTime:]_block_invoke:LRCView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.beforeLab">
+            </PersistentString>
+            <PersistentString
+               value = "self.beforeLab.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.beforeLab.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[KRC KRCToLrc:]:KRC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[string substringWithRange:range]">
+            </PersistentString>
+            <PersistentString
+               value = "self.lrcDic">
+            </PersistentString>
+            <PersistentString
+               value = "self.lrcArray">
+            </PersistentString>
+            <PersistentString
+               value = "string.length">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettingTableViewController textField:shouldChangeCharactersInRange:replacementString:]:SettingTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "textField.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PlayViewController playManage:withSong:withRadio:]:PlayViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.LRCView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettingTableViewController loadSettingData]:SettingTableViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LRCView recover]:LRCView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.afterLab">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettingManage read]:SettingManage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.settingDic">
+            </PersistentString>
+            <PersistentString
+               value = "self.path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettingTableViewController save]:SettingTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "settingManager.useNoWifiRemind">
+            </PersistentString>
+            <PersistentString
+               value = "self.useNoWifiRemind.on">
+            </PersistentString>
+            <PersistentString
+               value = "self.useNoWifiRemind">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoveListTableViewController tableView:didSelectRowAtIndexPath:]:LoveListTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoveListTableViewController tableView:numberOfRowsInSection:]:LoveListTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[self.loveManager getLoveList] count]">
+            </PersistentString>
+            <PersistentString
+               value = "self.loveManager">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RequestPlay hidHud]:RequestPlay.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.hud">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LRCView setCurrentTime:]:LRCView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.lrcArray.count">
+            </PersistentString>
+            <PersistentString
+               value = "time">
+            </PersistentString>
+            <PersistentString
+               value = "self.index">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

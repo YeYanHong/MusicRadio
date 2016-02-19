@@ -10,6 +10,7 @@
 #import "URLManage.h"
 #import "NetWorkingManage.h"
 #import "ParserXMLJSON.h"
+#import "KRC.h"
 
 @interface SongManage()
 @property (nonatomic,strong) NSString *songHash;
@@ -30,19 +31,22 @@
         //解析下载地址
         NSURL *songDownUrl = [NSURL URLWithString:[URLManage getMusicDownAddressForHash:self.songHash]];
         NSData *songDownData = [NetWorkingManage netWorkingSynchronizationWith:songDownUrl withType:NetWorkingTypeGet withParam:nil];
-        NSDictionary *songDic = [parser parseJSONFor:songDownData];
+        
+        NSDictionary *songDic = [ParserXMLJSON parseJSONFor:songDownData];
         self.songUrl = [NSURL URLWithString:[songDic objectForKey:@"url"]];
         
+        
         //解析歌手图像
-        NSString *imageUrlString = [URLManage getSingerImageForSingName:self.singer];
-        imageUrlString = [imageUrlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
-        NSURL *imageUrl =[NSURL URLWithString:imageUrlString];
+        NSURL *imageUrl = [URLManage getSingerImageForSingName:self.singer];
         NSData *imageData = [NetWorkingManage netWorkingSynchronizationWith:imageUrl withType:NetWorkingTypeGet withParam:nil];
+        
         [parser parserXMLFor:imageData with:^(NSDictionary *dic) {
             NSRange rang = {0,8};
-            self.singerImage = [NSString stringWithFormat:@"%@softhead/120/%@/%@",[dic objectForKey:@"FileDir"],[[dic objectForKey:@"FileName"] substringWithRange:rang],[dic objectForKey:@"FileName"]];
+            NSString *imageString = [NSString stringWithFormat:@"%@softhead/200/%@/%@",[dic objectForKey:@"FileDir"],[[dic objectForKey:@"FileName"] substringWithRange:rang],[dic objectForKey:@"FileName"]];
+            self.singerImage = [NSURL URLWithString:imageString];
         }];
         
+        self.songLrc = [URLManage getLrcForSongName:self.songName withTimeLength:[songDic objectForKey:@"timeLength"] withHash:self.songHash];
     }
     return self;
 }
@@ -51,13 +55,35 @@
     return [[SongManage alloc]initSongManage:dic];
 }
 
-+(NSArray *)songManageWithArray:(NSArray *)array{
-    NSMutableArray *songArray = [NSMutableArray array];
-    for(NSDictionary *dic in array){
-        SongManage *songManage = [SongManage songManage:dic];
-        [songArray addObject:songManage];
-    }
-    return songArray;
++(void)songManageWithArray:(NSArray *)array withBlock:(void(^)(NSArray *array))block{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSMutableArray *songArray = [NSMutableArray array];
+        for(NSDictionary *dic in array){
+            SongManage *songManage = [SongManage songManage:dic];
+            [songArray addObject:songManage];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            block(songArray);
+        });
+    });
+    
+}
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self.songName = [aDecoder decodeObjectForKey:@"songName"];
+    self.singer = [aDecoder decodeObjectForKey:@"singer"];
+    self.singerImage = [aDecoder decodeObjectForKey:@"singerImage"];
+    self.songLrc = [aDecoder decodeObjectForKey:@"songLrc"];
+    self.songUrl = [aDecoder decodeObjectForKey:@"songUrl"];
+    return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder{
+    [aCoder encodeObject:self.songName forKey:@"songName"];
+    [aCoder encodeObject:self.singer forKey:@"singer"];
+    [aCoder encodeObject:self.singerImage forKey:@"singerImage"];
+    [aCoder encodeObject:self.songLrc forKey:@"songLrc"];
+    [aCoder encodeObject:self.songUrl forKey:@"songUrl"];
     
 }
 @end

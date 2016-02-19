@@ -14,5 +14,5 @@ typedef enum {
 
 @interface NetWorkingManage : NSObject
 +(NSData *)netWorkingSynchronizationWith:(NSURL *)url withType:(NetWorkingType )type withParam:(NSData *)data;
-+(NSData *)netWorkingAsynchronizationWith:(NSURL *)url withType:(NetWorkingType )type withParam:(NSDictionary *)dic withReceiveBlock:(void (^)(NSData *data))block;
++(void)netWorkingAsynchronizationWith:(NSURL *)url withType:(NetWorkingType )type withParam:(NSData *)data withReceiveBlock:(void (^)(NSData *data))block;
 @end

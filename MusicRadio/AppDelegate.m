@@ -10,8 +10,10 @@
 #import "PlayViewController.h"
 #import "RadioListCollectionViewController.h"
 #import "MFSideMenu.h"
+#import "LoveManage.h"
+#import "Reachability.h"
+#import "NetworkChange.h"
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
@@ -34,6 +36,12 @@
     MFSideMenuContainerViewController *sideMenu = [MFSideMenuContainerViewController containerWithCenterViewController:playVC leftMenuViewController:radioCC rightMenuViewController:nil];
     sideMenu.leftMenuWidth = [[UIScreen mainScreen] bounds].size.width * 0.75;
     
+    
+    //添加网络监控
+    [[NSNotificationCenter defaultCenter] addObserver:[NetworkChange share] selector:@selector(reachChange:) name:kReachabilityChangedNotification object:NO];
+    
+    [[[NetworkChange share] reachability] startNotifier];
+    
     self.window.rootViewController = sideMenu;
     return YES;
 }
@@ -47,6 +55,8 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    BOOL result = [[LoveManage share] saveLoveList];
+    NSLog(@"save isSuccess:%@",result == YES ? @"success" : @"fail");
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -60,5 +70,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end

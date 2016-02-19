@@ -33,5 +33,8 @@
     //赋值
     self.imageView.image = [UIImage imageNamed:_radioModel.imgUrl];
     self.descLabel.text = _radioModel.fmName;
+    self.imageView.layer.masksToBounds = YES;
+    self.imageView.layer.cornerRadius = 25;
+    self.imageView.layer.borderWidth = 0;
 }
 @end

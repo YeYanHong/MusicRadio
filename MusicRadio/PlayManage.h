@@ -16,14 +16,14 @@
  
 */
 typedef enum{
-    playStatueStop = 0,
-    playStatuePlay = 1,
-    playStatuePaused = 2,
-    playStatueError = 3,
-}playStatue;
+    PlayStatusStop = 0,
+    PlayStatusPlay = 1,
+    PlayStatusPaused = 2,
+    PlayStatusError = 3,
+}PlayStatus;
 
 #import <Foundation/Foundation.h>
-@class PlayManage,SongManage;
+@class PlayManage,SongManage,RadioList,Radio;
 @protocol PlayManageDelegate <NSObject>
 @optional
 /**
@@ -32,7 +32,7 @@ typedef enum{
  *  @param manager 播放管理类
  *  @param song   音乐类
  */
--(void)playManage:(PlayManage *)manager withSong:(SongManage *)song;
+-(void)playManage:(PlayManage *)manager withSong:(SongManage *)song withRadio:(Radio *)radio;
 /**
  *  播放进度调用的委托
  *
@@ -40,16 +40,21 @@ typedef enum{
  *  @param trackTime  当前时间
  */
 -(void)playManage:(double)amountTime withTrack:(double)trackTime;
+-(void)playmanage:(PlayManage *)manager withStatueChange:(PlayStatus )satus;
 @required
 @end
 
 @interface PlayManage : NSObject
 @property (nonatomic,strong) NSArray *music;
 @property (nonatomic,strong) id<PlayManageDelegate> delegate;
-+(instancetype)sharePlay; 
--(void)playUrl:(NSURL *)url;
+@property (nonatomic,strong) Radio * currentRadio;
+@property (nonatomic,assign) int playIndex;
+@property (nonatomic,assign) PlayStatus status;
++(instancetype)sharePlay;
 //播放
 -(void)play;
+//播放一首歌按照url
+-(void)play:(SongManage *)song;
 //下一曲
 -(void)next;
 @end

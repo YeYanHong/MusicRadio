@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface URLManage : NSObject
-+(NSString *)getMusicListURL;
++(NSURL *)getMusicListURL;
 +(NSString *)getMusicDownAddressForHash:(NSString *)hash;
-+(NSString *)getSingerImageForSingName:(NSString *)name;
++(NSURL *)getSingerImageForSingName:(NSString *)name;
++(NSURL *)getLrcForSongName:(NSString *)name withTimeLength:(NSString *)time withHash:(NSString *)hash;
 @end

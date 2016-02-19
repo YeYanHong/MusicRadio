@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Radio : NSObject
+@interface Radio : NSObject<NSCoding>
 @property(nonatomic,strong) NSNumber *fmId;
 @property(nonatomic,strong) NSString *fmName;
 @property(nonatomic,strong) NSString *imgUrl;

@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SongManage : NSObject
+@interface SongManage : NSObject<NSCoding>
 @property (nonatomic,strong) NSString *songName;
 @property (nonatomic,strong) NSString *singer;
-@property (nonatomic,strong) NSString *singerImage;
+@property (nonatomic,strong) NSURL *singerImage;
 @property (nonatomic,strong) NSURL *songLrc;
 @property (nonatomic,strong) NSURL *songUrl;
 
 -(instancetype)initSongManage:(NSDictionary *)dic;
 +(instancetype)songManage:(NSDictionary *)dic;
-+(NSArray *)songManageWithArray:(NSArray *)array;
++(void)songManageWithArray:(NSArray *)array withBlock:(void(^)(NSArray *array))block;
 @end

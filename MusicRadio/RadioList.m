@@ -12,6 +12,7 @@
 @implementation RadioList
 -(instancetype)initRadioList:(NSDictionary *)dic{
     if(self = [super init]){
+        self.isExpend = YES;
         self.radioId = [dic objectForKey:@"id"];
         self.name = [dic objectForKey:@"name"];
         NSArray *radios = [dic objectForKey:@"radios"];

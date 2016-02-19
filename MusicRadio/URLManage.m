@@ -7,12 +7,13 @@
 //
 
 #import "URLManage.h"
+#include <math.h>
 
 @implementation URLManage
 
-+(NSString *)getMusicListURL{
++(NSURL *)getMusicListURL{
     NSString *url = @"http://www.kugou.com/fm/app/i/?cmd=1&uid=44333827&key=45bddce826dbd9555a2ddfa3a0d9a8ec";
-    return url;
+    return  [NSURL URLWithString:url];
 }
 
 +(NSString *)getMusicDownAddressForHash:(NSString *)hash{
@@ -21,9 +22,15 @@
     return url;
 }
 
-+(NSString *)getSingerImageForSingName:(NSString *)name{
-    NSString *url = @"http://singerimage.kugou.com/topimage.aspx?size=90&singername=";
-    url = [url stringByAppendingFormat:@"%@&type=softhead",name];
++(NSURL *)getSingerImageForSingName:(NSString *)name{
+    NSString *url = [NSString stringWithFormat:@"http://singerimage.kugou.com/topimage.aspx?singername=%@&size=260&type=softhead",name];
+    url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    return [NSURL URLWithString:url];
+}
+
++(NSURL *)getLrcForSongName:(NSString *)name withTimeLength:(NSString *)time withHash:(NSString *)hash{
+    NSString *urlString = [NSString stringWithFormat:@"http://mobilecdn.kugou.com/new/app/i/krc.php?keyword=%@&timelength=%d&type=1&cmd=200&hash=%@",name,[time intValue] * 1000,hash];
+   NSURL *url =  [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     return url;
 }
 @end

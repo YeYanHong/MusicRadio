@@ -26,7 +26,7 @@
     [parser parse];
 }
 
--(NSDictionary *)parseJSONFor:(NSData *)data{
++(NSDictionary *)parseJSONFor:(NSData *)data{
     return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 }
 

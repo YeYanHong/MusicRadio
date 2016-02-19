@@ -12,6 +12,7 @@
 @property (nonatomic,strong) NSNumber *radioId;
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) NSArray *radios;
+@property (nonatomic,assign) BOOL isExpend;
 -(instancetype)initRadioList:(NSDictionary *)dic;
 +(instancetype)radioList:(NSDictionary *)dic;
 +(NSArray *)getRadios;

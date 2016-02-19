@@ -19,4 +19,17 @@
 +(instancetype)radioWithDic:(NSDictionary *)dic{
     return [[Radio alloc]initRadioWithDic:dic];
 }
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self.fmId = [aDecoder decodeObjectForKey:@"fmId"];
+    self.imgUrl = [aDecoder decodeObjectForKey:@"fmUrl"];
+    self.fmName = [aDecoder decodeObjectForKey:@"fmName"];
+    return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder{
+    [aCoder encodeObject:self.fmId forKey:@"fmId"];
+    [aCoder encodeObject:self.fmName forKey:@"fmName"];
+    [aCoder encodeObject:self.imgUrl forKey:@"imgUrl"];
+}
 @end
