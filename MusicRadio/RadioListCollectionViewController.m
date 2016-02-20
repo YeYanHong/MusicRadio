@@ -101,8 +101,9 @@ static NSString * const reuseIdentifierForHeadView = @"RadioReusableView";
 #pragma mark - <UICollectionViewFlowLayou>
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGSize currentSize = [UIScreen mainScreen].bounds.size;
-    CGFloat width = currentSize.width * 0.75 / 3.0;
-    return CGSizeMake(width, 90);
+    CGFloat width =( currentSize.width * 3.0 / 4.0 - 10 )/ 3.0;
+    CGFloat height = width * ( 9.0 / 8.0 );
+    return CGSizeMake(width, height);
 }
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{

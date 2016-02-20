@@ -48,10 +48,26 @@
          contextName = "-[PlayViewController KRC:withLRCArray:]:PlayViewController.m">
       </ContextState>
       <ContextState
+         contextName = "-[AppDelegate applicationDidEnterBackground:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "play.status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[LoveManage saveLoveList]:LoveManage.m">
          <PersistentStrings>
             <PersistentString
                value = "self.loveList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__43-[PlayViewController setCurrentSongManage:]_block_invoke:PlayViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.songName.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -88,6 +104,14 @@
             </PersistentString>
             <PersistentString
                value = "( self.playIndex + 1 ) % self.music.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PlayManage enterBackground]:PlayManage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.audioPlayer.state">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -218,16 +242,32 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[LRCView setCurrentTime:]:LRCView.m">
+         contextName = "__18-[PlayManage play]_block_invoke:PlayManage.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.lrcArray.count">
+               value = "self.audioPlayer.state">
             </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LRCView setCurrentTime:]:LRCView.m">
+         <PersistentStrings>
             <PersistentString
                value = "time">
             </PersistentString>
             <PersistentString
+               value = "self.lrcArray.count">
+            </PersistentString>
+            <PersistentString
                value = "self.index">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PlayViewController setCurrentSongManage:]:PlayViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.songName.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -44,6 +44,7 @@
 @property (nonatomic,strong) SongManage *currentSongManage;
 @property (nonatomic,strong) SettingManage *settingManager;
 @property (weak, nonatomic) IBOutlet UIView *activityParentView;
+@property (weak, nonatomic) IBOutlet UIView *imageViewBG;
 @end
 
 @implementation PlayViewController
@@ -58,6 +59,12 @@
     if(self.settingManager.isAutoPlay)
         [self autoPlay];
     [self viewDefaultSetting];
+    
+//    
+//    self.imageViewBG.bounds = CGRectMake(0, 0, self.imageViewBG.frame.size.height, self.imageViewBG.frame.size.height);
+//    self.imageViewBG.backgroundColor = [UIColor blackColor];
+    self.imageViewBG.frame = CGRectMake(self.imageViewBG.frame.origin.x, self.imageViewBG.frame.origin.y, self.imageViewBG.frame.size.height, self.imageViewBG.frame.size.height);
+    
 }
 
 
@@ -76,14 +83,15 @@
     _currentSongManage = currentSongManage;
     
     //显示当前播放的歌曲名字
-    self.songName.text = @"";
-    self.songName.text = _currentSongManage.songName;
     CGSize maxSize = CGSizeMake(self.view.frame.size.width, 30);
-    CGSize fitSize = [JSSizeFrame jsSizeFormString:self.songName.text withMaxSize:maxSize withFont:[self.songName font]];
+    CGSize fitSize = [JSSizeFrame jsSizeFormString:_currentSongManage.songName withMaxSize:maxSize withFont:[self.songName font]];
     CGFloat songNameX =( self.view.frame.size.width - fitSize.width ) / 2.0;
     CGRect songNameRect = CGRectMake(songNameX, self.songName.frame.origin.y, fitSize.width, self.songName.frame.size.height);
     [UIView animateWithDuration:0.2 animations:^{
-        self.songName.frame = songNameRect;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.songName.text = _currentSongManage.songName;
+            self.songName.frame = songNameRect;
+        });
     }];
     
     //加载头像
@@ -202,13 +210,13 @@
 
 -(void)setLoveButtonImage{
     LoveManage *manager = [LoveManage share];
-    UIImage *image = ([manager isLove:self.currentSongManage] == YES ? [UIImage imageNamed:@"chat_collection_icon_yet"] : [UIImage imageNamed:@"chat_collection_icon"]) ;
+    UIImage *image = ([manager isLove:self.currentSongManage] == YES ? [UIImage imageNamed:@"yesLove"] : [UIImage imageNamed:@"noLove"]) ;
     [self.songLove setImage:image forState:UIControlStateNormal];
 }
 -(void)setPlayButtonImage{
     PlayManage *play = [PlayManage sharePlay];
     PlayStatus status = [play status];
-    UIImage *image = (status == PlayStatusPaused || status == PlayStatusStop) ? [UIImage imageNamed:@"status_bar_play"] : [UIImage imageNamed:@"status_bar_stop"];
+    UIImage *image = (status == PlayStatusPaused || status == PlayStatusStop) ? [UIImage imageNamed:@"play"] : [UIImage imageNamed:@"stop"];
     [self.play setImage:image forState:UIControlStateNormal];
 }
 @end

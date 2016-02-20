@@ -14,6 +14,7 @@
 		CB02F8291C49526B00EB2E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB02F8281C49526B00EB2E0C /* Assets.xcassets */; };
 		CB02F82C1C49526B00EB2E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB02F82A1C49526B00EB2E0C /* LaunchScreen.storyboard */; };
 		CB184EFC1C73349600BAF9AA /* NetworkChange.m in Sources */ = {isa = PBXBuildFile; fileRef = CB184EFB1C73349600BAF9AA /* NetworkChange.m */; };
+		CB1A171A1C786220001FBA3E /* PlayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1A17191C786220001FBA3E /* PlayViewController.storyboard */; };
 		CB31514E1C65EDDC0031CF3B /* LoveListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB31514D1C65EDDC0031CF3B /* LoveListTableViewController.m */; };
 		CB3151931C6642AC0031CF3B /* JSSizeFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3151921C6642AC0031CF3B /* JSSizeFrame.m */; };
 		CB368B321C76409700325C3F /* RadioHead.m in Sources */ = {isa = PBXBuildFile; fileRef = CB368B311C76409700325C3F /* RadioHead.m */; };
@@ -28,7 +29,6 @@
 		CB93F2B61C4E20FD00BFFE6E /* RadioCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB93F2B41C4E20FD00BFFE6E /* RadioCollectionReusableView.xib */; };
 		CBB3E1D91C4FBCB900FB0994 /* URLManage.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3E1D81C4FBCB900FB0994 /* URLManage.m */; };
 		CBB4BD851C4A3D5D000C031D /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB4BD831C4A3D5D000C031D /* PlayViewController.m */; };
-		CBB4BD861C4A3D5D000C031D /* PlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB4BD841C4A3D5D000C031D /* PlayViewController.xib */; };
 		CBB4BD8A1C4A458A000C031D /* RadioListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB4BD891C4A458A000C031D /* RadioListCollectionViewController.m */; };
 		CBB4BD8C1C4A45E5000C031D /* RadioList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBB4BD8B1C4A45E5000C031D /* RadioList.plist */; };
 		CBB743B61C709B7700325C64 /* NSDictionary+NSNull.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB743B51C709B7700325C64 /* NSDictionary+NSNull.m */; };
@@ -59,6 +59,7 @@
 		CB02F82D1C49526B00EB2E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB184EFA1C73349600BAF9AA /* NetworkChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkChange.h; sourceTree = "<group>"; };
 		CB184EFB1C73349600BAF9AA /* NetworkChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkChange.m; sourceTree = "<group>"; };
+		CB1A17191C786220001FBA3E /* PlayViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayViewController.storyboard; sourceTree = "<group>"; };
 		CB31514C1C65EDDC0031CF3B /* LoveListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoveListTableViewController.h; sourceTree = "<group>"; };
 		CB31514D1C65EDDC0031CF3B /* LoveListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoveListTableViewController.m; sourceTree = "<group>"; };
 		CB3151911C6642AC0031CF3B /* JSSizeFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSizeFrame.h; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		CBB3E1D81C4FBCB900FB0994 /* URLManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLManage.m; sourceTree = "<group>"; };
 		CBB4BD821C4A3D5D000C031D /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		CBB4BD831C4A3D5D000C031D /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
-		CBB4BD841C4A3D5D000C031D /* PlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayViewController.xib; sourceTree = "<group>"; };
 		CBB4BD881C4A458A000C031D /* RadioListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioListCollectionViewController.h; sourceTree = "<group>"; };
 		CBB4BD891C4A458A000C031D /* RadioListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioListCollectionViewController.m; sourceTree = "<group>"; };
 		CBB4BD8B1C4A45E5000C031D /* RadioList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RadioList.plist; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 			children = (
 				CBB4BD821C4A3D5D000C031D /* PlayViewController.h */,
 				CBB4BD831C4A3D5D000C031D /* PlayViewController.m */,
-				CBB4BD841C4A3D5D000C031D /* PlayViewController.xib */,
+				CB1A17191C786220001FBA3E /* PlayViewController.storyboard */,
 			);
 			name = PlayViewController;
 			sourceTree = "<group>";
@@ -366,11 +366,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB743C31C70B40B00325C64 /* SettingTableViewController.storyboard in Resources */,
+				CB1A171A1C786220001FBA3E /* PlayViewController.storyboard in Resources */,
 				CBED21FD1C4D1175000C2D77 /* RadioCollectionViewCell.xib in Resources */,
 				CBB4BD8C1C4A45E5000C031D /* RadioList.plist in Resources */,
 				CB02F82C1C49526B00EB2E0C /* LaunchScreen.storyboard in Resources */,
 				CB02F8291C49526B00EB2E0C /* Assets.xcassets in Resources */,
-				CBB4BD861C4A3D5D000C031D /* PlayViewController.xib in Resources */,
 				CB93F2B61C4E20FD00BFFE6E /* RadioCollectionReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

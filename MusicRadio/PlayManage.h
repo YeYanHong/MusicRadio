@@ -57,4 +57,6 @@ typedef enum{
 -(void)play:(SongManage *)song;
 //下一曲
 -(void)next;
+//app进入后台继续播放需要继续的操作
+-(void)enterBackground;
 @end

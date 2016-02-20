@@ -13,6 +13,7 @@
 #import "LoveManage.h"
 #import "Reachability.h"
 #import "NetworkChange.h"
+#import "PlayManage.h"
 @interface AppDelegate ()
 @end
 
@@ -31,10 +32,11 @@
     flowLayout.itemSize = [UIScreen mainScreen].bounds.size;
     RadioListCollectionViewController *radioCC = [[RadioListCollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
     //play View
-    PlayViewController *playVC = [[PlayViewController alloc]init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"PlayViewController" bundle:nil];
+     PlayViewController *playVC = [storyboard instantiateViewControllerWithIdentifier:@"playVC"];
     
     MFSideMenuContainerViewController *sideMenu = [MFSideMenuContainerViewController containerWithCenterViewController:playVC leftMenuViewController:radioCC rightMenuViewController:nil];
-    sideMenu.leftMenuWidth = [[UIScreen mainScreen] bounds].size.width * 0.75;
+    sideMenu.leftMenuWidth = [[UIScreen mainScreen] bounds].size.width * 3.0 / 4.0;
     
     
     //添加网络监控
@@ -57,6 +59,23 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     BOOL result = [[LoveManage share] saveLoveList];
     NSLog(@"save isSuccess:%@",result == YES ? @"success" : @"fail");
+//    PlayManage *play = [PlayManage sharePlay];
+//    if(play.status == PlayStatusPlay){
+//        [play enterBackground];
+//    }
+//    __block UIBackgroundTaskIdentifier background_task;
+//    background_task = [application beginBackgroundTaskWithExpirationHandler:^{
+//        background_task = UIBackgroundTaskInvalid;
+//    }];
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        while (true) {
+//            NSLog(@"播放状态:%d",play.status);
+//        }
+//        NSLog(@"已经暂停");
+//        [play enterBackground];
+//        [application endBackgroundTask:background_task];
+//        background_task = UIBackgroundTaskInvalid;
+//    });
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

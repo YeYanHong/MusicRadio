@@ -105,6 +105,9 @@ static PlayManage *playManage;
     //开始管理播放
 }
 
+-(void)enterBackground{
+    [self.audioPlayer resume];
+}
 
 #pragma mark - 懒加载
 -(NSOperationQueue *)playManagerQueue{
@@ -113,19 +116,21 @@ static PlayManage *playManage;
         _playManagerQueue.name = @"playManagerQueue";
         [_playManagerQueue addOperationWithBlock:^{
             while (true) {
-                if(self.audioPlayer.state == STKAudioPlayerStateStopped || self.audioPlayer.state == STKAudioPlayerStatePaused)
-                    continue;
+//                if(self.audioPlayer.state == STKAudioPlayerStateStopped || self.audioPlayer.state == STKAudioPlayerStatePaused)
+//                    continue;
                 //可以调用各种的委托
                 double amoutTime = self.audioPlayer.progress;//当前时间
                 double trackTime = self.audioPlayer.duration;//总共时间
-               // NSLog(@"amout = %f --- track = %f",amoutTime,trackTime);
+                if(fabs(trackTime - amoutTime) < 0.000001 && amoutTime != 0.000000)
+                    [self next];
+                if(self.audioPlayer.state == STKAudioPlayerStateStopped || self.audioPlayer.state == STKAudioPlayerStatePaused)
+                    continue;
+                NSLog(@"amout = %f --- track = %f",amoutTime,trackTime);
                 if([self.delegate respondsToSelector:@selector(playManage:withTrack:)]){
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [self.delegate playManage:amoutTime withTrack:trackTime];
                     });
                 }
-                if(fabs(trackTime - amoutTime) < 0.000001 && amoutTime != 0.000000)
-                    [self next];
                 
                 [NSThread sleepForTimeInterval:1];
             }
